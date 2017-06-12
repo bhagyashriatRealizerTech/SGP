@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DrawerActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="Search"
+        android:icon="@drawable/ic_search_white"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_switchclass"
+        android:orderInCategory="100"
+        android:title="Switch Class"
+        android:visible="false"
+        android:icon="@android:drawable/ic_popup_sync"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_done"
+        android:orderInCategory="100"
+        android:title="Done"
+        android:icon="@drawable/ic_action_accept"
+        app:showAsAction="always" />
+
+
+</menu>

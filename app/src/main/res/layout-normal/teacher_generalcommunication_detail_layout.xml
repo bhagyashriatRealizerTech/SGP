@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="16">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:text="English"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#174595"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txtcatname"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:visibility="gone"
+        >
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Category"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text=": English"
+            android:layout_height="wrap_content"
+            android:textColor="#323232"
+            android:layout_marginLeft="175dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+          />
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Date"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text=": 29 August 2016"
+            android:textColor="@color/black"
+            android:layout_marginLeft="175dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txtalertdate"/>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Teacher Name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text=": Divyesh Shah"
+            android:textColor="@color/black"
+            android:layout_marginLeft="175dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txtteacherName"/>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10.7"
+        android:layout_marginLeft="30dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decription"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_margin="0dp"
+            android:padding="7dp"
+            android:id="@+id/txtdescription"
+            />
+        </ScrollView>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+</LinearLayout>

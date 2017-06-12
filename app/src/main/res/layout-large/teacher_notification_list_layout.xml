@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:background="@color/greycolor"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.6"
+            android:id="@+id/txtinitial"
+            android:background="@drawable/profilepic_circle"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:text="SD"/>
+        <com.realizer.schoolgenie.parent.view.RoundedImageView
+            android:layout_width="10dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.6"
+            android:visibility="visible"
+            android:src="@drawable/f3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="center"
+            android:id="@+id/img_user_image" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.3"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Fancy Dress Competetion"
+                    android:id="@+id/txtnotificationtype"
+                    android:gravity="left"
+                    android:layout_gravity="left|center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="31 September"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="right|center_vertical"
+                    android:textSize="20sp"
+                    android:id="@+id/txtdate"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="wrap_content"
+                    android:text="Teacher "
+                    android:id="@+id/txtmessage"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:layout_gravity="left|center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="40dp"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/unread_circle"
+                    android:id="@+id/txtunreadcount"
+                    android:text="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

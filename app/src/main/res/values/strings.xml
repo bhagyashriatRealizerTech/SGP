@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Parent</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+
+    <!-- =================== GCM Related String ======================= -->
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+
+
+
+    <!-- =================== Left Drawer Item Text ======================= -->
+
+    <string name="DashBoard">DashBoard</string>
+    <string name="MyClass">My Pupil</string>
+    <string name="Homework">Homework</string>
+    <string name="RewardStar">View Star</string>
+    <string name="TimeTable">Time Table</string>
+    <string name="Chat">Chat</string>
+    <string name="FunCenter">Fun Center</string>
+    <string name="Alerts">Alerts</string>
+    <string name="Classwork">Classwork</string>
+    <string name="Holiday">Holiday</string>
+    <string name="Logout">Logout</string>
+    <string name="Sync">Sync</string>
+
+    <string-array name="drawer_items">
+
+        <item >Dashboard</item>
+        <item >My Pupil</item>
+        <item >Homework</item>
+        <item >View Star</item>
+        <item >Time Table</item>
+        <item >Chat</item>
+        <item>Fun Center</item>
+        <item >Alerts</item>
+        <item >Classwork</item>
+        <item >Holiday</item>
+        <item>Logout</item>
+
+    </string-array>
+
+    <!-- Keep them in order as the titles are in -->
+    <array name="drawer_icons">
+        <item>@drawable/home_icon</item>
+        <item>@drawable/myclass_icon</item>
+        <item>@drawable/homework_icon</item>
+        <item>@drawable/rewardstar_icon</item>
+        <item>@drawable/timetable_icon</item>
+        <item>@drawable/chat_icon</item>
+        <item>@drawable/funcenter_icon</item>
+        <item>@drawable/annoucement_icon</item>
+        <item>@drawable/homework_icon</item>
+        <item>@drawable/holiday_icon</item>
+        <item>@drawable/logout_icon</item>
+
+    </array>
+
+    <!-- Fun Center Constant String -->
+    <string name="btn_gallery_image">Image</string>
+    <string name="btn_gallery_video">Video</string>
+    <string name="btn_gallery_invitation">Invitation</string>
+
+    <string name="click_to_view_image">Click Here To View Image</string>
+
+    <string name="FunCenterCancel">Cancel</string>
+    <string name="FunCenterDelete">Delete</string>
+    <string name="FunCenterDeleteImages">Are you sure to delete image?</string>
+    <string name="FunCenterAlert">Alert!!</string>
+    <string name="FunCenterEventName">Please select event name</string>
+    <string name="FunCenterEventDate">Please select event date</string>
+    <string name="FunCenterSelectImage">Please select image</string>
+    <string name="FunCenterTotalSelectedImages">Total images selected:</string>
+
+
+
+    //GCM
+    <string name="GCMConversation">Conversation</string>
+    <string name="GCMViewstar">Viewstar</string>
+    <string name="GCMAttendance">Attendance</string>
+    <string name="GCMAnnouncement">Announcement</string>
+
+    //Manual Synckup
+    <string name="ManualSynckup">Exception in ServiceLocation Async</string>
+
+    //Viewstar
+    <string name="ViewstarVeryGood">VeryGood</string>
+    <string name="ViewstarGreat">Great</string>
+    <string name="ViewstarNiceWork">NiceWork</string>
+    <string name="ViewstarTerrific">Terrific</string>
+    <string name="ViewstarSupreStar">SupreStar</string>
+    <string name="ViewstarWellDone">WellDone</string>
+</resources>

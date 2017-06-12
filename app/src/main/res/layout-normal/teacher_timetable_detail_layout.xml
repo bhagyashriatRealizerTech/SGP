@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:components="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="15">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Time Table Title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text=": English"
+            android:textColor="#323232"
+            android:layout_marginLeft="175dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txttitle"/>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Date"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text=": 29 August 2016"
+            android:textColor="@color/black"
+            android:layout_marginLeft="175dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txttimetabledate"/>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Teacher Name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text=": Divyesh Shah"
+            android:textColor="@color/black"
+            android:layout_marginLeft="175dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txtteacherName"/>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:id="@+id/frameimageClik"
+        >
+        <!--<TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="@string/click_to_view_image"
+            android:textStyle="normal"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="0dp"
+            android:layout_gravity="center"
+            android:id="@+id/txtclicktoviewimage"
+            />-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btnCapturePicture1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            android:adjustViewBounds="true"
+
+            />
+       <!-- <com.realizer.schoolgenie.parent.utils.GIFView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            android:id="@+id/gifimageview"
+            components:src="@drawable/loading"/>-->
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+            android:layout_margin="5dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text=""
+            android:textStyle="normal"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="0dp"
+            android:layout_gravity="center|bottom"
+            android:id="@+id/txtProgressPercentage"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/txtDivider"
+        android:background="@drawable/border_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decription:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="0dp"
+            android:padding="7dp"
+            android:layout_gravity="left|top"
+           />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decription"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_margin="0dp"
+            android:padding="7dp"
+            android:scrollbars = "vertical"
+            android:id="@+id/txtdescription"
+            android:layout_gravity="left|top" />
+        </ScrollView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+</LinearLayout>

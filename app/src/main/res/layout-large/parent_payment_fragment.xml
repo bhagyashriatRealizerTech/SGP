@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Semester"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:layout_gravity="center_vertical"
+            android:text="Fees"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"
+            android:text="Status"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:text="Due Date"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+        <ListView
+            android:id="@+id/paymentList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

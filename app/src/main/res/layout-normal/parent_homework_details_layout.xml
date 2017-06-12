@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="15">
+
+    <FrameLayout style="@style/SubFrameLayoutWeight1"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <TextView style="@style/TextViewFontStyle"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="Class :"/>
+        <TextView style="@style/TextViewFontStyle"
+            android:layout_gravity="left"
+            android:id="@+id/txttclassname"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="70dp"
+            android:textSize="20dp"
+            android:text="Playgroup"/>
+        <TextView style="@style/TextViewFontStyle"
+            android:layout_gravity="right"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="90dp"
+            android:textSize="20dp"
+            android:text="Div :"/>
+        <TextView style="@style/TextViewFontStyle"
+            android:layout_gravity="right"
+            android:id="@+id/txttdivname"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:text="A"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/border_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        >
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Subject"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text=": English"
+            android:textColor="#323232"
+            android:layout_marginLeft="175dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txtsubject"/>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        >
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Date"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text=": 29 August 2016"
+            android:textColor="@color/black"
+            android:layout_marginLeft="175dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txthomeworkdate"/>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        >
+        <TextView style="@style/NormalFontAndSize.MarginLeft40"
+            android:text="Teacher Name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView style="@style/NormalFontAndSize.MarginLeft170"
+            android:text=": Divyesh Shah"
+            android:textColor="@color/black"
+            android:layout_marginLeft="175dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txtteacherName"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5.2"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:id="@+id/imagelayout"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/homeworkgridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="100dip"
+            android:fastScrollEnabled="true"
+            android:gravity="center"
+            android:horizontalSpacing="4dip"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:visibility="visible"
+            android:verticalSpacing="2dip" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/txtDivider"
+        android:background="@drawable/border_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        >
+        <TextView
+            style="@style/NormalFontAndSize.MarginLeft40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decription:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingTop="3dp"
+            android:paddingBottom="7dp"
+            android:layout_gravity="left|top"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+            <TextView style="@style/NormalFontAndSize.MarginLeft40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Decription"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:paddingTop="2dp"
+                android:paddingBottom="7dp"
+                android:id="@+id/txtdescription"
+                />
+        </ScrollView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_line"/>
+</LinearLayout>

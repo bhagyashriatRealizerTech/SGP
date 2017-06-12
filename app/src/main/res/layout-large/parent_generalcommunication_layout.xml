@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:weightSum="13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<LinearLayout style="@style/SubFrameLayoutWeight1"
+            android:background="#ffffff"
+            android:layout_height="wrap_content">
+            <TextView style="@style/TextViewFontStyle"
+                android:layout_gravity="left"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="0.8"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:textSize="20dp"
+                android:text="Class :"/>
+            <TextView style="@style/TextViewFontStyle"
+                android:layout_gravity="left"
+                android:id="@+id/txttclassname"
+                android:textColor="#000000"
+                android:layout_weight="1.2"
+                android:gravity="left|center"
+                android:textStyle="normal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:textSize="20dp"
+                android:text="Playgroup"/>
+            <TextView style="@style/TextViewFontStyle"
+                android:layout_gravity="right"
+                android:textColor="#000000"
+                android:layout_weight="0.5"
+                android:gravity="right|center"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:textSize="20dp"
+                android:text="Div :"/>
+            <TextView style="@style/TextViewFontStyle"
+                android:layout_gravity="right"
+                android:id="@+id/txttdivname"
+                android:textColor="#000000"
+                android:gravity="left|center"
+                android:layout_weight="1.5"
+                android:textStyle="normal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="A"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/border_line"/>-->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12.9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:divider="@color/white"
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@+id/lsttgeneralcommunication"/>
+        <TextView
+            android:id="@+id/tvNoDataMsg"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="No Alerts Provided."
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

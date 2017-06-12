@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:weightSum="13"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:fastScrollEnabled="true"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/foldergridView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="100dip"
+            android:fastScrollEnabled="true"
+            android:gravity="center"
+            android:horizontalSpacing="4dip"
+            android:numColumns="3"
+            android:layout_marginTop="10dp"
+            android:stretchMode="columnWidth"
+            android:visibility="visible"
+            android:verticalSpacing="2dip" />
+        <TextView
+            android:id="@+id/tvNoDataMsg"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="No Events Are Created."
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+       <!-- <com.realizer.schoolgenie.parent.view.ProgressWheel
+            android:id="@+id/loading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:matProg_barColor="@color/colorAccent"
+            app:matProg_progressIndeterminate="true"
+            />-->
+    </RelativeLayout>
+
+</RelativeLayout>

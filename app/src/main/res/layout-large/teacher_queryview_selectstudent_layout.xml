@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootl"
+    android:background="#00ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_gravity="center">
+
+        <EditText android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/searchbacground"
+            android:hint="Search Student.."
+            android:inputType="textVisiblePassword"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:id="@+id/lsttselctstudentname"
+        android:layout_margin="10dp">
+    </ListView>
+
+        <Button style="@style/LoginButton"
+            android:text="SEND"
+            android:id="@+id/btnselectstud"
+            android:layout_width="100dp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonselector"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

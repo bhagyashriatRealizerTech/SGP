@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/linearroot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/curveshape"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText style="@style/EditTextMultiline"
+            android:hint=" Enter Driver's Username"
+            android:layout_marginTop="20dp"
+            android:id="@+id/driverUsername"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:maxLength="30"/>
+
+        <EditText style="@style/EditTextMultiline"
+            android:hint=" Enter Driver's UserID"
+            android:layout_marginTop="20dp"
+            android:id="@+id/driverUserID"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:maxLength="30"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="Show Map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/ShowMap"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="@drawable/buttonselector"
+                    />
+
+                <Button
+                    android:text="Cancel"
+                    android:layout_height="40dp"
+                    android:id="@+id/Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/buttonselector"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--   <Button style="@style/LoginButton"
+               android:text="Cancel"
+               android:layout_height="40dp"
+               android:id="@+id/CancelTrack"
+               android:layout_width="100dp"
+               android:layout_gravity="center"
+               android:backgroundcal="@drawable/buttonselector"
+               />-->
+    </LinearLayout>
+</LinearLayout>

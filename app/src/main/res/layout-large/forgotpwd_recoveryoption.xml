@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout style="@style/SubFrameLayoutWeight1"
+        android:background="@color/colorAccent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Choose Password Recovery Option"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        </FrameLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/rgforgotoption"
+        android:layout_marginTop="30dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive Password by Email"
+            android:textSize="20sp"
+            android:id="@+id/rb_option_mail"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Password by Magic Word"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/rb_option_magic_word"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/border_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <Button style="@style/LoginButton"
+            android:layout_width="220dp"
+            android:background="@drawable/login_button_orange"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:id="@+id/btn_submit"
+            android:text="Submit"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button style="@style/LoginButton"
+            android:layout_width="220dp"
+            android:background="@drawable/login_button_orange"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:id="@+id/btn_cancel"
+            android:text="Cancel"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+</LinearLayout>

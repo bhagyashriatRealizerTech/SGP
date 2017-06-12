@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/terms_condition">
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Welcome to School Genie Parent"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:textColor="#fcfcfc"
+                android:background="@color/colorPrimaryDark"
+                android:text="By downloading or otherwise accessing the App you agree to be bound by the following terms and conditions (“Terms“). If you have any queries about the App or these Terms, you can contact Us. \nIf you do not agree with these Terms, you should stop using the App immediately."
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:text="2. Accept all terms"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:text="3. Accept all terms"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:text="4. Accept all terms"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:text="5. Accept all terms"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:text="6. Accept all terms"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:text="7. Accept all terms"
+                />
+        </LinearLayout>
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkagree"
+            android:textColor="@color/colorPrimary"
+            android:buttonTint="@color/colorPrimary"
+            android:text="I agree to the Terms &amp; Conditions "/>
+        <Button
+            android:layout_width="120dp"
+            android:background="@drawable/login_button_orange"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/btnSubmitTerms"
+            android:onClick="LoginClick"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"/>
+        </LinearLayout>
+</RelativeLayout>

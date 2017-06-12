@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<LinearLayout style="@style/SubFrameLayoutWeight1"
+            android:background="#ffffff"
+            android:layout_height="wrap_content">
+            <TextView style="@style/TextViewFontStyle"
+                android:layout_gravity="left"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="0.8"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:textSize="20dp"
+                android:text="Class :"/>
+            <TextView style="@style/TextViewFontStyle"
+                android:layout_gravity="left"
+                android:id="@+id/txttclassname"
+                android:textColor="#000000"
+                android:layout_weight="1.2"
+                android:gravity="left|center"
+                android:textStyle="normal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:textSize="20dp"
+                android:text="Playgroup"/>
+            <TextView style="@style/TextViewFontStyle"
+                android:layout_gravity="right"
+                android:textColor="#000000"
+                android:layout_weight="0.5"
+                android:gravity="right|center"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:textSize="20dp"
+                android:text="Div :"/>
+            <TextView style="@style/TextViewFontStyle"
+                android:layout_gravity="right"
+                android:id="@+id/txttdivname"
+                android:textColor="#000000"
+                android:gravity="left|center"
+                android:layout_weight="1.5"
+                android:textStyle="normal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="A"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/border_line"/>-->
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="7.8">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/lsttname"
+                android:divider="@color/white"
+                android:layout_weight="1"
+                android:layout_gravity="left|center_vertical"
+                >
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/tvNoDataMsg"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="No Messages Available."
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/txtinitiatechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_add" />
+
+    <!--  <ImageButton
+          android:id="@+id/txtinitiatechat"
+          android:layout_width="56dp"
+          android:layout_height="56dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="20dp"
+          android:layout_marginRight="40dp"
+          android:background="@drawable/add_person_background"
+          android:src="@drawable/ic_add"
+          android:visibility="visible"
+          android:clickable="true"/>-->
+</RelativeLayout>
+
+
+
+
+
