@@ -103,6 +103,18 @@ public class LoginActivity extends Activity implements OnTaskCompleted {
             if (!checkIfAlreadyhavePermission()) {
                 requestForSpecificPermission();
             }
+            else {
+                TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+                SharedPreferences.Editor edit = sharedpreferences.edit();
+                edit.putString("DWEVICEID", telephonyManager.getDeviceId());
+                edit.commit();
+            }
+        }
+        else {
+            TelephonyManager telephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+            SharedPreferences.Editor edit = sharedpreferences.edit();
+            edit.putString("DWEVICEID", telephonyManager.getDeviceId());
+            edit.commit();
         }
 
         String copyYear = String.valueOf(Calendar.getInstance().get(Calendar.YEAR));
