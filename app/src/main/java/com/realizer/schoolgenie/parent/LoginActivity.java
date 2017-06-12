@@ -57,6 +57,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Calendar;
+
 public class LoginActivity extends Activity implements OnTaskCompleted {
 
     EditText userName, password;
@@ -71,6 +73,7 @@ public class LoginActivity extends Activity implements OnTaskCompleted {
     String defaultMagicWord;
     SharedPreferences sharedpreferences;
     boolean isTermAgree=false;
+    TextView copyRight;
 
 
     @Override
@@ -92,7 +95,7 @@ public class LoginActivity extends Activity implements OnTaskCompleted {
         num =0;
         dbqr=new DatabaseQueries(getApplicationContext());
         defaultMagicWord="";
-
+        copyRight = (TextView) findViewById(R.id.copyrightyear);
 
         //permission for marsh mallow
         int MyVersion = Build.VERSION.SDK_INT;
@@ -102,8 +105,8 @@ public class LoginActivity extends Activity implements OnTaskCompleted {
             }
         }
 
-
-
+        String copyYear = String.valueOf(Calendar.getInstance().get(Calendar.YEAR));
+        copyRight.setText("© "+ copyYear +" RealizerTech");
 
         userName.addTextChangedListener(new TextWatcher() {
             @Override
