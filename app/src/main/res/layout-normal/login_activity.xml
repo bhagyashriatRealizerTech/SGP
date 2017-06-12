@@ -109,6 +109,7 @@
                 android:layout_marginBottom="0dp"
                 android:layout_gravity="bottom|center_horizontal"
                 android:textColor="#4682B4"
+                android:id="@+id/copyrightyear"
                 android:text="© 2016 RealizerTech"/>
 
         </FrameLayout>
