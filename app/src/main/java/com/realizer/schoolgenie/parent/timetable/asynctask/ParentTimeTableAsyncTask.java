@@ -96,6 +96,9 @@ public class ParentTimeTableAsyncTask extends AsyncTask<Void, Void,StringBuilder
                 InputStream content = entity.getContent();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(content));
                 String line;
+
+                exceptionString.append("URL: "+url.toString()+"\nInput: "+json+"\nException: ");
+
                 while((line=reader.readLine()) != null)
                 {
                     exceptionString.append(line);

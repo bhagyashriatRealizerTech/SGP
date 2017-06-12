@@ -101,6 +101,9 @@ public class ParentFunCenterAsynckPost extends AsyncTask<Void, Void,StringBuilde
                 InputStream content = entity.getContent();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(content));
                 String line;
+
+                exceptionString.append("URL: "+url.toString()+"\nInput: "+json+"\nException: ");
+
                 while((line=reader.readLine()) != null)
                 {
                     exceptionString.append(line);

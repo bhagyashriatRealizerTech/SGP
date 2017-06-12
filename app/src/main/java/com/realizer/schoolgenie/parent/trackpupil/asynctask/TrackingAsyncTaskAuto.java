@@ -82,6 +82,8 @@ public class TrackingAsyncTaskAuto extends AsyncTask<Void, Void,StringBuilder> {
                 InputStream content = entity.getContent();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(content));
                 String line;
+                exceptionString.append("URL: "+my.toString()+"\nInput: Get Method \nException: ");
+
                 while((line=reader.readLine()) != null)
                 {
                     exceptionString.append(line);

@@ -102,6 +102,13 @@ public class ClassworkAsyncTaskPost extends AsyncTask<Void, Void,StringBuilder>
                 InputStream content = entity.getContent();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(content));
                 String line;
+
+
+                exceptionString.append("URL: "+url.toString()+"\nInput: "+json+"\nException: ");
+
+
+                NetworkException.insertNetworkException(myContext, exceptionString.toString());
+
                 while((line=reader.readLine()) != null)
                 {
                     exceptionString.append(line);
